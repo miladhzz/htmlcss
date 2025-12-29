@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+        }
+        .black {
+            background-color: black;
+            color: white;
+        }
+        .flex {
+            display: flex;
+        }
+        .justify {
+            justify-content: space-between;
+        }
+        .gap {
+            gap: 10px;
+        }
+        .align-center{
+            align-items: center;
+        }
+        .logo {
+            width: 300px;
+            max-width: 100%;
+            height: auto;
+        }
+        .input {
+            outline: none;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: rgb(240, 240, 241);
+        }
+    </style>
 </head>
-<body>
-    test
+<body class="black">
+    <div class="flex justify align-center">
+        <img class="logo" src="images/sigi.svg" alt="digikala">
+        <div>
+            <input class="input" name="search" type="text" placeholder="جستجو"/>
+        </div>
+        <div class="flex gap">
+            <button class="btn">ورود|ثبت نام</button>
+        </div>
+    </div>
 </body>
 </html>
