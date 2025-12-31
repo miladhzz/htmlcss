@@ -10,25 +10,67 @@
             color: white;
         }
         .flex{
-            display: flex;
+            display: flex;                        
+        }
+        .base {
+            height: 100vh;
             justify-content: center;
             align-items: center;
-            height: 100vh;
         }
+        
         .card{
-            height: 500px;
-            background-color: brown;
+            background-color: rgb(54, 53, 53);
             border-radius: 20px;
             border: 1px solid rgb(255, 255, 255);
             overflow: hidden;
+            padding-bottom: 20px;
+        }
+
+        .j-beetween{
+            justify-content: space-between;
+        }
+        .gap {
+            gap: 10px;
+        }
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            padding: 0 10px 0 10px;
+        }
+        .price {
+            padding: 0 10px 0 10px;
+        }
+        .percent {
+            background-color: rgb(186, 28, 28);
+            padding: 5px 10px 5px 10px;
+            border-radius: 40px;
+        }
+        .start {
+            align-items: start;
+        }
+        .final-price{
+            font-size: 20px;
+            font-weight: 600px;
+        }
+        .off-price {
+            text-decoration: line-through;
         }
     </style>
 </head>
 <body>
-    <div class="flex">
+    <div class="flex base">
         <div class="card">
             <img src="images/mobile.webp" alt="mobile" />
+            <div class="title">title</div>
+            <div class="price flex j-beetween start">
+                <span class="percent">15%</span>
+                <div>
+                    <div class="final-price">3000 تومان</div>
+                    <div class="off-price">3500</div>
+                </div>
+            </div>
         </div>
+        
     </div>
 </body>
 </html>
