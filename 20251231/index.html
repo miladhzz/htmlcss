@@ -2,7 +2,7 @@
 <html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>       
         body{
@@ -33,12 +33,12 @@
             gap: 10px;
         }
         .title{
-            font-size: 20px;
+            /* font-size: 20px; */
             font-weight: 600;
-            padding: 0 10px 0 10px;
+            padding: 0 10px;
         }
         .price {
-            padding: 0 10px 0 10px;
+            padding: 0 10px;
         }
         .percent {
             background-color: rgb(186, 28, 28);
@@ -55,13 +55,17 @@
         .off-price {
             text-decoration: line-through;
         }
+        .img {
+            width: 100%;
+            display: block;
+        }
     </style>
 </head>
 <body>
     <div class="flex base">
         <div class="card">
-            <img src="images/mobile.webp" alt="mobile" />
-            <div class="title">title</div>
+            <img class="img" src="images/mobile.webp" alt="mobile" />
+            <h3 class="title">title</h3>
             <div class="price flex j-between start">
                 <span class="percent">15%</span>
                 <div>
