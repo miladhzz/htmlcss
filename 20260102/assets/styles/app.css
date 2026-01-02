@@ -42,9 +42,6 @@ body {
     background-color: var(--bg);
     color: var(--text);
     font-family: iranyekan;
-}
-
-.base {
     height: 100vh;
     display: flex;
     justify-content: center;
