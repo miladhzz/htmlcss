@@ -24,7 +24,6 @@
 
         .product-card {
             width: 150px;
-            height: 250px;
             border-radius: 10px;
             border-width: 1px;
             border: 1px solid #fff;
@@ -38,8 +37,7 @@
 
         .image {
             display: block;
-            /* width: 100%; */
-            width: 130px;
+            width: 100%;
             border-radius: 10px;
         }
 
@@ -52,7 +50,7 @@
         .product-prices {
             display: flex;
             flex-direction: column;
-            align-items: end;
+            align-items: flex-end;
             padding: 0 10px;
         }
 
@@ -70,9 +68,9 @@
 </head>
 
 <body>
-    <div class="product-card">
+    <article class="product-card">
         <div class="product-image">
-            <img class="image" src="assets/images/image.png" />
+            <img class="image" src="assets/images/image.png" alt="nike kafsh" />
         </div>
         <h3 class="product-title">نایک زوم استراکچر اسپرت مشکی</h3>
         <div class="product-prices">
@@ -84,7 +82,7 @@
                 <span class="toman">تومان</span>
             </div>
         </div>
-    </div>
+    </article>
 </body>
 
 </html>
