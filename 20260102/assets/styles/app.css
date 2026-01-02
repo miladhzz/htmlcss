@@ -42,5 +42,51 @@ body {
     background-color: var(--bg);
     color: var(--text);
     font-family: iranyekan;
-    /* font-weight: bold; */
+}
+
+.base {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card {
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    border-width: 1px;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+
+.image-box {
+    background-color: #26272B;
+}
+
+.product-image {
+    padding: 10px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-title {
+    padding: 0 10px 0 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.product-prices {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 0 10px;
+}
+
+.price-new {
+    color: #38BDF8;
 }
